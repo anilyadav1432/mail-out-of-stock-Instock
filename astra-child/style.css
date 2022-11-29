@@ -1,0 +1,174 @@
+/**
+Theme Name: Anglia Tackle & Gun Bespoke
+Author: Norfolk Web Support
+Author URI: https://www.norfolkwebsupport.co.uk
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: anglia-tackle-gun-bespoke
+Template: astra
+*/
+/*.ced-announce {
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+    transition: all .7s ease-in-out;
+    transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+    transform-origin: center center;
+    max-width: 600px;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.ced-announce::-webkit-scrollbar {
+    display: none;
+}
+.ced-announce.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s ease-in-out;
+    transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+}
+.ced-announce .container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+.ced-announce .container h2 {
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 25px;
+    background-color: #5c6ac4;
+    color: #fff;
+    line-height: 1.1em;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin: 0;
+}
+.ced-announce .container img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+.ced-announce .container .content {
+    background-color: #fff;
+    padding: 12px 3px 20px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, .16);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.ced-announce .container .content p {
+    font-size: 14px;
+    color: rgba(68, 68, 68, .7);
+    margin-bottom: 5px;
+}
+.ced-announce .container .content p:first-of-type {
+    color: rgba(68, 68, 68, 1);
+}
+.ced-announce .container .content .button {
+    margin-top: 20px;
+    background-color: #f58220;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.ced-announce .container .closePopup {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    z-index: 10;
+    color: #fff;
+}
+.ced-announce .container .closePopup span {
+    font-size: 16px;
+}
+*/
+
+.ced-announce {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index:9999;	
+}
+.ced-announce.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s ease-in-out;
+    transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+}
+.ced-announce .container {
+  margin: 80px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.ced-announce .container h2{
+    background: #000;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+    width: 42px;
+    float:right;
+    font-size: 20px;
+}
+
+.ced-announce .container .content .button {
+    margin-top: 20px;
+    background-color: #f58220;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.ced-announce .container .closePopup {
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+.ced-announce .container .closePopup span {
+    font-size: 16px;
+}
+.ced-announce .container .content {
+    padding: 18px;
+}
+.ced-announce .modal-title_ {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.ced-announce .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .ced-announce .wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel {
+    padding: 5px;
+    border-radius: 5px;
+}
+.ced-announce label {
+    font-size: 14px;
+}
+@media only screen and (max-width: 768px){
+	.ced-announce .container{
+		width:85%;
+}
+}
